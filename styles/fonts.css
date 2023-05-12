@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'TCCC';
+    src: url("../fontes/TCCC.ttf") format('truetype');
+    font-weight: normal;
+}
+
+body {
+    font-family: "TCCC" !important;
+}
+
+[class*="-black"] {
+    font-weight: 900;
+  }
+  
+  [class*="-book"] {
+    font-weight: 800;
+  }
+  
+  [class*="-bold"] {
+    font-weight: 700;
+  }
+  
+  [class*="-semibold"] {
+    font-weight: 600;
+  }
+  
+  [class*="-medium"] {
+    font-weight: 500;
+  }
+  
+  [class*="-regular"] {
+    font-weight: 400;
+  }
+  
+  [class*="-light"] {
+    font-weight: 300;
+  }
+
+  [class*="title-1"] {
+    font-size: 92px;
+  }
+
+  [class*="title-2"] {
+    font-size: 40px;
+  }
+
+  [class*="title-3"] {
+    font-size: 24px;
+  }
+
+  [class*="paragraph-1"] {
+    font-size: 24px;
+  }
+
+  [class*="paragraph-2"] {
+    font-size: 16px;
+  }
+
+  [class*="link-1"] {
+    font-size: 16px;
+  }
+  

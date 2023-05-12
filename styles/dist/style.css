@@ -1,0 +1,129 @@
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.bt {
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 17px;
+  padding: 0 25px;
+  background-color: transparent;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.bt.white {
+  background-color: #fff;
+  color: #000;
+}
+.bt.white:hover {
+  background-color: #000;
+  color: #fff;
+}
+.bt.white:hover svg {
+  fill: #fff;
+}
+.bt.black {
+  background-color: #000;
+  color: #fff;
+}
+.bt.black:hover {
+  background-color: #fff;
+  color: #000;
+}
+.bt svg {
+  width: 20px;
+  height: auto;
+  transition: 0.3s;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 15px 0;
+  transition: 0.3s;
+}
+header .logo {
+  width: 80px;
+}
+header .logo img {
+  width: 100%;
+  object-fit: contain;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .box-left,
+header .box-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header nav {
+  display: flex;
+  gap: 15px;
+}
+header nav a {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+}
+header .icon-faq {
+  width: 22px;
+  height: auto;
+  fill: #fff;
+  display: flex;
+}
+header.active {
+  background-color: #000;
+  transition: 0.3s;
+}
+header.active * {
+  color: #fff !important;
+  transition: 0.3s;
+}
+header.active .bt.white {
+  background-color: #fff;
+  color: #000 !important;
+}
+header.active .bt.white svg {
+  fill: #000;
+}
+#banner {
+  position: relative;
+  padding-top: 95px;
+  aspect-ratio: 2.6;
+}
+#banner img {
+  aspect-ratio: inherit;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  object-fit: cover;
+}
+#banner .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+#banner p {
+  font-size: 18px;
+  color: #fff;
+}

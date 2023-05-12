@@ -1,0 +1,158 @@
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.bt {
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 17px;
+    padding: 0 25px;
+    background-color: transparent;
+    font-weight: bold;
+    transition: 0.3s;
+
+    &.white {
+        background-color: #fff;
+        color: #000;
+
+        &:hover {
+            background-color: #000;
+            color: #fff;
+
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+
+    &.black {
+        background-color: #000;
+        color: #fff;
+
+      &:hover {
+            background-color: #fff;
+            color: #000;
+      }
+    }
+
+    svg {
+        width: 20px;
+        height: auto;
+        transition: 0.3s;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 15px 0;
+    transition: 0.3s;
+
+    .logo {
+        width: 80px;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .box-left,
+    .box-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        gap: 15px;
+
+        a {
+            color: #000;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+    }
+
+    .icon-faq {
+        width: 22px;
+        height: auto;
+        fill: #fff;
+        display: flex;
+    }
+
+}
+
+header.active {
+    background-color: #000;
+    transition: 0.3s;
+
+    * {
+        color: #fff !important;
+        transition: 0.3s;
+    }
+
+    
+    .bt.white {
+        background-color: #fff;
+        color: #000 !important;
+
+        svg {
+            fill: #000;
+        }
+    }
+
+}
+
+
+#banner {
+    position: relative;
+    padding-top: 95px;
+    aspect-ratio: 2.6;
+
+    img {
+        aspect-ratio: inherit;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        object-fit: cover;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    p {
+        font-size: 18px;
+        color: #fff;
+    }
+}
